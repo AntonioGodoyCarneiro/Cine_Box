@@ -1,3 +1,7 @@
+<?php session_start(); ?>
+
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -28,6 +32,8 @@
     <link rel="stylesheet" href="assets/css/carrossel.css">
     <link rel="stylesheet" href="assets/css/filmes.css">
     <link rel="stylesheet" href="assets/css/usuario.css">
+    <link rel="stylesheet" href="assets/css/login.css">
+   
     
 
 </head>
@@ -41,7 +47,7 @@
             <ul class="menu">
                 <li><a href="./index.php">Inicio</a></li>
                 <li><a href="./listarfilmes.php">Filmes</a></li>
-                <li><a href="#">Sobre</a></li>
+                <li><a href="sobre.php">Sobre</a></li>
             </ul>
 
             <ul class="menu_icones">
