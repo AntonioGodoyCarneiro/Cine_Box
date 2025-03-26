@@ -1,7 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-
+ 
 :root {
     --color-black: #0b0e19;
     --color-green: #014040;
@@ -12,9 +12,9 @@
     --color-green-light: #ADD9B0;
     --color-violet-light: #9125A3;
     --color-violet-dark: #210D26;
-
+ 
 }
-
+ 
 * {
     margin: 0;
     font-family: "Inter", sans-serif;
@@ -23,44 +23,44 @@
     font-variation-settings:
         "slnt" 0;
 }
-
+ 
 .escondido {
     display: none;
 }
-
+ 
 .logo {
     font-weight: bold;
     text-decoration: none;
     color: var(--color-black-light);
     cursor: pointer;
 }
-
+ 
 .menu_icones ul:not(.dropdown-menu) {
     list-style: none;
     display: flex;
     gap: 5px;
 }
-
+ 
 .menu_icones li:not(.drop) {
     display: inline-block;
 }
-
+ 
 .menu_icones li a {
     padding: 8px;
     border-radius: 8px;
     color: var(--color-black);
     text-decoration: none;
     font-family: "Inter", sans-serif;
-
+ 
 }
-
+ 
 .menu_icones .selecionado,
 .menu_icones li a:hover {
     background-color: var(--color-black);
     color: var(--color-white);
     border: 1px solid var(--color-black);
 }
-
+ 
 button.menu-oculto {
     border: none;
     background-color: inherit;
@@ -68,7 +68,7 @@ button.menu-oculto {
     padding: 8px;
     color: var(--color-black);
 }
-
+ 
 div.menu-oculto {
     height: 100%;
     width: 0;
@@ -81,7 +81,7 @@ div.menu-oculto {
     z-index: 3;
     transition: 0.5s;
 }
-
+ 
 div.menu-oculto a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
@@ -90,11 +90,11 @@ div.menu-oculto a {
     display: block;
     transition: 0.3s;
 }
-
+ 
 div.menu-oculto a:hover {
     color: var(--color-white);
 }
-
+ 
 div.menu-oculto button.fechar {
     position: absolute;
     top: 0;
@@ -107,11 +107,11 @@ div.menu-oculto button.fechar {
     padding: none;
     transition: 0.3s;
 }
-
+ 
 .menu-oculto {
     display: none;
 }
-
+ 
 #overlay {
     position: fixed;
     top: 0;
@@ -122,8 +122,8 @@ div.menu-oculto button.fechar {
     z-index: 2;
     transition: 0.5s;
 }
-
-
+ 
+ 
 header nav {
     display: flex;
     align-items: baseline;
@@ -132,80 +132,80 @@ header nav {
     background-color: var(--color-white);
     width: 100%;
 }
-
+ 
 #banner {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
+ 
 #filmes {
     height: 100%;
 }
-
-.carrossel-container {
+ 
+.carrossel_container {
     width: 100%;
     max-width: 1920px;
-
+ 
     position: relative;
     border: 2px solid #CCCCCC;
     border-radius: 10px;
-
+ 
     overflow: hidden;
 }
-
+ 
 .carrossel {
     display: flex;
     transition: transform 1s ease-in-out;
 }
-
-.carrossel-container>button {
+ 
+.carrossel_container>button {
     z-index: 1;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-
+ 
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     padding: 10px;
     cursor: pointer;
     border-radius: 5px;
     border: none;
-
+ 
 }
-
-.carrossel-container button:hover {
+ 
+.carrossel_container button:hover {
     background-color: rgba(0, 0, 0, 0.7);
 }
-
-.carrossel-container button.prev {
+ 
+.carrossel_container button.anterior {
     left: 10px;
 }
-
-.carrossel-container button.next {
+ 
+.carrossel_container button.proximo {
     right: 10px;
 }
-
+ 
 .carrossel img {
     width: 100%;
 }
-
+ 
 @media screen and (min-width: 1920px) {
-    .carrossel-container {
+    .carrossel_container {
         width: 100%;
         max-width: 1920px;
     }
 }
-
+ 
 main.produtos {
     padding: 20px 0;
 }
-
+ 
 main.produtos a {
     text-decoration: none;
     color: var(--color-black-light);
 }
-
+ 
 #filmes .titulo,
 #sobre .titulo {
     justify-content: center;
@@ -218,7 +218,7 @@ main.produtos a {
     margin-left: 10px;
     text-transform: uppercase;
 }
-
+ 
 #filmes figure {
     background-color: var(--color-gray-light);
     text-align: center;
@@ -228,12 +228,12 @@ main.produtos a {
     max-width: 400px;
     height: 600px;
 }
-
+ 
 figure a {
     text-decoration: none;
     color: var(--color-black-light);
 }
-
+ 
 #filmes figcaption {
     padding: 0 10%;
     display: flex;
@@ -242,9 +242,9 @@ figure a {
     max-width: 100%;
     flex-grow: 1;
     /*faz o conteúdo usar o máximo de espaço disponível*/
-
+ 
 }
-
+ 
 /* preciso corrigir a definição das imagens */
 #filmes .foto-produto {
     width: 95%;
@@ -254,9 +254,9 @@ figure a {
     border-radius: 20px;
     object-fit: cover;
     padding-top: 10px;
-
+ 
 }
-
+ 
 #filmes figcaption h4 {
     font-size: 1.2rem;
     margin-top: 10px;
@@ -266,7 +266,7 @@ figure a {
     height: 2.4rem;
     /*equivale ao tamanho de 2 linhas*/
 }
-
+ 
 #filmes figcaption p {
     text-align: justify;
     overflow: hidden;
@@ -277,7 +277,7 @@ figure a {
     -webkit-box-orient: vertical;
     font-size: 1.2rem;
 }
-
+ 
 #filmes span.preco {
     color: var(--color-violet);
     font-weight: 700;
@@ -287,7 +287,7 @@ figure a {
     justify-content: end;
     align-items: end;
 }
-
+ 
 #filmes .generos,
 #detalhe .generos
 {
@@ -298,7 +298,7 @@ figure a {
     margin-top: auto;
     flex-wrap: wrap;
 }
-
+ 
 #filmes .generos label,
 #detalhe .generos label {
     background-color: tomato;
@@ -310,49 +310,49 @@ figure a {
     padding: 4px 20px;
     font-size: 1.2rem;
 }
-
+ 
 @media screen and (max-width: 768px) {
-    /* .menu-perfil {
+    .menu_icones {
         display: flex;
         flex-direction: column;
         height: 110px;
-    } */
-
+    }
+ 
     .menu,
     .menu-compra {
         display: none !important;
     }
-
+ 
     #banner {
         height: 30vh;
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
     }
-
+ 
     #filmes figure {
         width: 300px;
         margin: 10px auto;
     }
-
+ 
     .menu-oculto {
         display: inline;
     }
-
-
+ 
+ 
 }
-
+ 
 #sobre {
     padding: 0 10% 10% 10%;
 }
-
+ 
 #sobre .descricao p {
     text-align: justify;
     margin-top: 20px;
     font-weight: 500;
-
+ 
 }
-
+ 
 #sobre .imagem-right {
     width: 100%;
     height: 400px;
@@ -361,7 +361,7 @@ figure a {
     object-fit: cover;
     object-position: right;
 }
-
+ 
 #sobre .imagem-left {
     width: 100%;
     height: 400px;
@@ -370,33 +370,33 @@ figure a {
     object-fit: cover;
     object-position: left;
 }
-
+ 
 .footer {
     background-color: var(--color-violet-dark);
     color: var(--color-white);
     padding: 15px 0;
 }
-
+ 
 .footer a {
     color: var(--color-white);
     text-decoration: none;
 }
-
+ 
 .footer a:hover {
     text-decoration: underline;
 }
-
+ 
 .social-icons a {
     color: var(--color-white);
     font-size: 24px;
     margin-right: 15px;
     transition: color 0.3s;
 }
-
+ 
 .social-icons a:hover {
     color: var(--color-white);
 }
-
+ 
 .footer-bottom {
     text-align: center;
     padding: 20px 0;
