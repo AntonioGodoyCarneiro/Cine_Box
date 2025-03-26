@@ -44,7 +44,7 @@
             <a href="#" class="logo">
                 <h1>Cine Box</h1>
             </a>
-            <ul class="menu">
+            <ul class="menu_icones">
                 <li><a href="./index.php">Inicio</a></li>
                 <li><a href="./listarfilmes.php">Filmes</a></li>
                 <li><a href="sobre.php">Sobre</a></li>
@@ -57,7 +57,7 @@
                 <li><a href="./usuario.php"><i class="bi bi-person-circle"></i></a></li>
             </ul>
 
-            <button class="menu-oculto" onclick="javascript:abrir_nav()">
+            <button class="escondido" onclick="javascript:abrir_nav()">
                 <i class="bi bi-list"></i>
             </button>
 
@@ -66,8 +66,8 @@
                     <i class="bi bi-x"></i>
                 </button>
                 <a href="index.html">Inicio</a>
-                <a href="#">Filmes</a>
-                <a href="#">Sobre</a>
+                <a href="./listarfilmes.php">Filmes</a>
+                <a href="./sobre.php">Sobre</a>
             </div>
 
         </nav>

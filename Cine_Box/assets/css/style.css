@@ -35,17 +35,17 @@
     cursor: pointer;
 }
 
-.menu-perfil ul:not(.dropdown-menu) {
+.menu_icones ul:not(.dropdown-menu) {
     list-style: none;
     display: flex;
     gap: 5px;
 }
 
-.menu-perfil li:not(.drop) {
+.menu_icones li:not(.drop) {
     display: inline-block;
 }
 
-.menu-perfil li a {
+.menu_icones li a {
     padding: 8px;
     border-radius: 8px;
     color: var(--color-black);
@@ -54,8 +54,8 @@
 
 }
 
-.menu-perfil .selecionado,
-.menu-perfil li a:hover {
+.menu_icones .selecionado,
+.menu_icones li a:hover {
     background-color: var(--color-black);
     color: var(--color-white);
     border: 1px solid var(--color-black);
